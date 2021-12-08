@@ -25,7 +25,7 @@ This project started as a class project and was designed to be compatible (enoug
 See section below for implemented commands
 
 ## Commands
-Command enumerations based on GS232 Protocol, works with 'rotctld -m 606 command on linux '
+Command enumerations based on GS232 Protocol; works with 'rotctld -m 606 -r /dev/xxx' on RaspPi
 
 CMD_R 'R' - Move right continously
 
