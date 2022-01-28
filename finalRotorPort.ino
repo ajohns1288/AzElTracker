@@ -57,7 +57,9 @@ void setup()
 
   pinMode(LED_BUILTIN, OUTPUT);
   digitalWrite(LED_BUILTIN, 0);
-  pinMode(A0, INPUT);
+  
+  //Change this to match your home pin setup
+  pinMode(EL_HOME_PIN_ANL, INPUT);
 
   el.goHome();
 
