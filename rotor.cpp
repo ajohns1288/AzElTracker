@@ -48,6 +48,7 @@ Rotor::Rotor(uint8_t axis, uint8_t sp, uint8_t dp, uint8_t hp, uint8_t degStep)
   //Initialize positions to zero, other state variables as needed
   currPos = 0;
   desPos = 0;
+  measPos = 0;
   dir = 0;
   stp = 0;
 
@@ -68,16 +69,16 @@ void Rotor::setPos(long ang)
   desPos = ang;
 }
 
-void Rotor::setSpd(int ang)
+void Rotor::setSpd(int s)
 {
   //Sets the desired speed (1-4)
-  spd = ang;
+  spd = s;
 }
 
-void Rotor::setMode(int ang)
+void Rotor::setMode(int md)
 {
   //Sets the desired movement mode
-  mode = ang;
+  mode = md;
 }
 
 int Rotor::getMode()
