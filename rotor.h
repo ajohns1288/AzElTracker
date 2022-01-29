@@ -48,9 +48,11 @@ class Rotor {
     Rotor(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t);
     Rotor(uint8_t);
     void setPos(long);
+    void setMeasPos(long);
     void setSpd(int);
     void setMode(int);
     long getPos();
+    long getMeasPos();
     long getTgtPos();
     int getMode();
     int getStatus();
@@ -70,6 +72,7 @@ class Rotor {
 
     long currPos;
     long desPos;
+    long measPos;
     uint8_t dir;
     uint8_t stp;
 
