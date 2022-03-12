@@ -24,6 +24,10 @@ This project started as a class project and was designed to be compatible (enoug
 
 See section below for implemented commands
 
+## Hardware adaptation
+
+Since different people might want to use the same logic but for different hardware, the hardware specific values are in the rotorParams.h file. This way, you can tailor the code to your specific application without having to change mulitple variables all over the place
+
 ## Commands
 Command enumerations based on GS232 Protocol; works with 'rotctld -m 606 -r /dev/xxx' on RaspPi
 
